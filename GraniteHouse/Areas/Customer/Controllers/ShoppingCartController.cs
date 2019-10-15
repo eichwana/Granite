@@ -7,7 +7,7 @@ using GraniteHouse.Extensions;
 using GraniteHouse.Models;
 using GraniteHouse.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore
+using Microsoft.EntityFrameworkCore;
 
 namespace GraniteHouse.Areas.Customer.Controllers
 {
@@ -40,6 +40,7 @@ namespace GraniteHouse.Areas.Customer.Controllers
                     ShoppingCartVM.Products.Add(prod);
                 }
             }
+            
             return View(ShoppingCartVM);
         }
     }
